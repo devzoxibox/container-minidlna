@@ -1,5 +1,5 @@
 # Builds docker image for minidlna
-FROM zoxi/contenair-debian:latest
+FROM zoxi/container-debian:latest
 
 # Installation de minidlna
 RUN apt-get -q update && apt-get -qy install minidlna
