@@ -17,13 +17,6 @@ sed -i 's/user=minidlna/user=nobody/g' /etc/minidlna.conf
 # set friendly name to MiniDLNA
 sed -i 's/#friendly_name=My DLNA Server/friendly_name=MiniDLNA/g' /etc/minidlna.conf
 
-# if minidlna config file doesnt exist then copy default to host config volume
-if [ ! -f "/config/minidlna.conf" ]; then
-
-	# copy over customised config
-	cp /etc/minidlna.conf /config/
-				
-fi
 
 # set permissions for user nobody
 chmod -R 775 /config/
