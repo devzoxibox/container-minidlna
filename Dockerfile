@@ -11,8 +11,8 @@ VOLUME /config
 VOLUME /media
 
 # Ajout des droits à "/minidlna"
-RUN chown -R nobody:users /usr/bin/minidlnad
-RUN chmod -R 775 /usr/bin/minidlnad
+RUN chown -R nobody:users /usr/bin/minidlna
+RUN chmod -R 775 /usr/bin/minidlna
 
 # Ajout du script de démarrage
 ADD start.sh /start.sh
