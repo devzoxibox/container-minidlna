@@ -5,6 +5,10 @@ FROM zoxi/container-debian:latest
 RUN apt-get -q update && apt-get -qy install minidlna
 RUN apt-get clean
 
+# Ajout du script de configuration
+ADD config.sh /config.sh
+RUN chmod +x /*.sh && \
+    /bin/bash /config.sh
 
 # Montage des volumes
 VOLUME /config
