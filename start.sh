@@ -29,4 +29,4 @@ fi
 chmod -R 775 /config/
 chown -R nobody:users /config/
 
-/usr/bin/minidlna
+/etc/init.d/minidlna force-reload
