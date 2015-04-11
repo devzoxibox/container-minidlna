@@ -13,4 +13,4 @@ fi
 chmod -R 775 /config/
 chown -R nobody:users /config/
 
-exec /usr/bin/minidlna -d $@
+exec /usr/bin/minidlna -d $@ /config/minidlna.conf
