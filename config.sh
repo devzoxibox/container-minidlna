@@ -13,4 +13,4 @@ sed -i 's/#db_dir=\/var\/lib\/minidlna/db_dir=\/config/g' /etc/minidlna.conf
 sed -i 's/#inotify=yes/inotify=yes/g' /etc/minidlna.conf
 
 # set friendly name to MiniDLNA
-sed -i 's/#friendly_name=/friendly_name=MiniDLNA/g' /etc/minidlna.conf
+sed -i 's/#friendly_name=/friendly_name=UnRAID-DLNA/g' /etc/minidlna.conf
