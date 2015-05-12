@@ -1,13 +1,7 @@
 # Builds docker image for minidlna
-FROM debian:wheezy
+FROM zoxi/container-debian:latest
 
 MAINTAINER zoxi
-
-ENV DEBIAN_FRONTEND noninteractive
-
-# User nobody pour UnRAID
-RUN usermod -u 99 nobody
-RUN usermod -g 100 nobody
 
 # Installation de minidlna
 RUN apt-get -q update && apt-get -qy install minidlna
